@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { singleCharacter } from "../functions/functions";
+import { singleCharacter } from "../api/functions";
 import { Link } from "react-router-dom";
+
 const Character = () => {
   const [character, serCharacter] = useState(null);
 

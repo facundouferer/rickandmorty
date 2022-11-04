@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { allCharacters } from "../functions/functions";
+import { allCharacters } from "../api/functions";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 
@@ -14,6 +14,7 @@ const Home = () => {
 
   var nextPage = null;
   var prevPage = null;
+
   if (characters) {
     prevPage = characters.data.info.prev
       ? characters.data.info.prev.split("page=")[1]
